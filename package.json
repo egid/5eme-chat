@@ -1,19 +1,19 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Le Cinquieme Chat / The Fifth Cat",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Charity website using Gatsby for static site generation",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Eric Gideon <eric.gideon@gmail.com>",
   "dependencies": {
     "gatsby": "^5.16.1",
     "gatsby-adapter-netlify": "^1.0.1",
-    "gatsby-plugin-image": "^3.12.0",
-    "gatsby-plugin-manifest": "^5.12.0",
-    "gatsby-plugin-sharp": "^5.12.0",
-    "gatsby-source-filesystem": "^5.12.0",
-    "gatsby-transformer-sharp": "^5.12.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "gatsby-plugin-image": "^3.16.0",
+    "gatsby-plugin-manifest": "^5.16.0",
+    "gatsby-plugin-sharp": "^5.16.0",
+    "gatsby-source-filesystem": "^5.16.0",
+    "gatsby-transformer-sharp": "^5.16.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "prettier": "^2.8.8",
@@ -30,15 +30,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "deploy": "npm run build && wrangler pages deploy public",
     "deploy:prod": "npm run build && wrangler pages deploy public --branch=main"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
