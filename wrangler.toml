@@ -1,0 +1,8 @@
+name = "5thcat"
+compatibility_date = "2026-08-07"
+
+# This tells Wrangler where your static files are
+pages_build_output_dir = "public"
+
+[site]
+bucket = "./public"
