@@ -3,7 +3,7 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Seo from "../components/_seo"
 import * as styles from "../components/index.module.css"
 
 const links = [
@@ -65,21 +65,6 @@ const utmParameters = ``
 
 const IndexPage = () => (
   <Layout>
-    <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/logo.webp"
-        loading="eager"
-        width={200}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1 class="sr-only">Le Cinquième Chat - The Fifth Cat</h1>
-      <div class="textCenter">
-        <a href="https://www.facebook.com/5eme.chat">Facebook</a> | <a href="https://instagram.com/5th.cat">Instagram</a>
-      </div>
-    </div>
     <ul className={styles.list}>
       {links.map(link => (
         <li key={link.url} className={styles.listItem}>
