@@ -25,12 +25,12 @@ const links = [
     description:
       "Contribute via PayPal",
   },
-  {
-    text: "Donate 1€ a month",
-    url: "https://www.teaming.net/fifthcat",
-    description:
-      "Contribute via Teaming",
-  },
+  // {
+  //   text: "Donate 1€ a month",
+  //   url: "https://www.teaming.net/fifthcat",
+  //   description:
+  //     "Contribute via Teaming",
+  // },
   {
     text: "Become a member",
     url: "https://www.helloasso.com/associations/le-cinquieme-chat-the-fifth-cat",
