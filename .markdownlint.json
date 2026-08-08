@@ -1,0 +1,5 @@
+{
+    "default": true,
+    "no-multiple-blanks": { "maximum": 2 },
+    "line-length": false
+}
