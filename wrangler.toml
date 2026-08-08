@@ -4,3 +4,9 @@ compatibility_date = "2026-08-07"
 # This tells Wrangler where your static files are
 pages_build_output_dir = "public"
 
+[build]
+command = "npx gatsby build"
+cwd = "build_cwd"
+
+[assets]
+directory = "./public"
