@@ -11,6 +11,6 @@ A Gatsby-generated static charity website!
 Downloading and running the local development server is reasonably simple:
 
 1. clone the repository locally; the instructions assume the use of `~/code/`
-2. `cd 5eme-chat`
+2. `cd 5thcat`
 3. `npm install`
 4. `npm run develop`
