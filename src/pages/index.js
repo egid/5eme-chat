@@ -8,28 +8,22 @@ import * as styles from "../components/index.module.css"
 
 const links = [
   {
-    text: "Adoptez un chat (français)",
-    url: "https://docs.google.com/forms/d/e/1FAIpQLSfXLLTRlU5Iyet9byAqJs-2lh_Z8fTWTu_RcdCohvO7x0uy6Q/viewform?usp=send_form",
+    text: "Adoptez un chat / Adopt a cat",
+    url: "https://www.secondechance.org/refuge/bas-rhin/le-cinquieme-chat-3467/pensionnaires",
     description:
-      "Formulaire pré-adoption",
-  },
-  {
-    text: "Adopt a cat (english)",
-    url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSf996Yu15jDlm9M2aIkX2edYalGLyd7Rja17xFrJp85Z0ORhA/viewform?usp=send_form&pli=1",
-    description:
-      "Pre-adoption form",
+      "Formulaire pré-adoption / pre-adoption form",
   },
   {
     text: "Support Greek stray cats",
     url: "http://paypal.me/FifthCat",
     description:
-      "Contribute via PayPal",
+      "PayPal",
   },
   {
     text: "Faire un don pour les chats grecs (CB)",
     url: "https://www.helloasso.com/associations/le-cinquieme-chat-the-fifth-cat",
     description:
-      "Faites un don via HelloAsso",
+      "HelloAsso",
   },
 ]
 
