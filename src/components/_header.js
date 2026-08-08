@@ -26,7 +26,7 @@ const Header = ({ siteTitle }) => (
         loading="eager"
         width={200}
         quality={95}
-        formats={["auto", "webp", "avif", "jpeg"]}
+        formats={["auto", "webp", "png"]}
         alt=""
         style={{ 
           marginBottom: `var(--space-3)`,
