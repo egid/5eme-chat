@@ -26,16 +26,10 @@ const links = [
       "Contribute via PayPal",
   },
   {
-    text: "Donate 1€ a month",
-    url: "https://www.teaming.net/fifthcat",
-    description:
-      "Contribute via Teaming",
-  },
-  {
-    text: "Become a member",
+    text: "Faire un don pour les chats grecs (CB)",
     url: "https://www.helloasso.com/associations/le-cinquieme-chat-the-fifth-cat",
     description:
-      "Contribute via helloasso",
+      "Faites un don via HelloAsso",
   },
 ]
 
