@@ -19,8 +19,8 @@ const Footer = () => (
             </p>
         </div>
         <p>© Le Cinquieme Chat / The Fifth Cat {new Date().getFullYear()}</p>
-        <p>ASSOCIATION À BUT NON LUCRATIF Déclaré en France — n°W883005877</p>
-        <p>NON-PROFIT CHARITY Registered in France — n°W883005877</p>
+        <p lang="fr">ASSOCIATION À BUT NON LUCRATIF Déclaré en France — n°W883005877</p>
+        <p lang="en">NON-PROFIT CHARITY Registered in France — n°W883005877</p>
     </footer>
 )
 

@@ -5,6 +5,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/_seo"
 import * as styles from "../components/index.module.css"
+import { graphql } from "gatsby"
 
 const links = [
   {
@@ -51,29 +52,42 @@ const links = [
 // const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 const utmParameters = ``
 
-const IndexPage = () => (
-  <Layout>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    {/* {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))} */}
-  </Layout>
-)
+export const query = graphql`
+  query IndexPageQuery {
+    markdownRemark(fileAbsolutePath: { regex: "/src/content/index/index.en.md/" }) {
+      html
+    }
+  }
+`
+
+const IndexPage = ( {data} ) => {
+  const index = data.markdownRemark;
+
+  return (
+    <Layout>
+      <ul className={styles.list}>
+        {links.map(link => (
+          <li key={link.url} className={styles.listItem}>
+            <a
+              className={styles.listItemLink}
+              href={`${link.url}${utmParameters}`}
+            >
+              {link.text} ↗
+            </a>
+            <p className={styles.listItemDescription}>{link.description}</p>
+          </li>
+        ))}
+      </ul>
+      {/* {moreLinks.map((link, i) => (
+        <React.Fragment key={link.url}>
+          <a href={`${link.url}${utmParameters}`}>{link.text}</a>
+          {i !== moreLinks.length - 1 && <> · </>}
+        </React.Fragment>
+      ))} */}
+      <div dangerouslySetInnerHTML={{ __html: index.html }} />
+    </Layout>
+  )
+}
 
 /**
  * Head export to define metadata for the page
