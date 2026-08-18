@@ -21,10 +21,10 @@ const links = [
       "PayPal",
   },
   {
-    text: "Faire un don pour les chats grecs (CB)",
+    text: "Faire un don pour les chats grecs",
     url: "https://www.helloasso.com/associations/le-cinquieme-chat-the-fifth-cat",
     description:
-      "HelloAsso",
+      "HelloAsso (CB)",
   },
 ]
 

@@ -22,7 +22,7 @@ Individual rescuers and shelters can receive help in donation, equipment donatio
 
 ### Education & information
 
-A compassionate contact with each adopter is one of our priority, in events or online, informing more and more people about the situation of street cats in Greece.
+A compassionate contact with each adopter is our priority, in events or online, informing more and more people about the situation of street cats in Greece.
 
 
 ## We need <em>you</em>
