@@ -2,25 +2,25 @@ import * as React from "react"
 import { graphql, useStaticQuery } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import * as styles from "../components/_footer.module.css"
-import BackgroundImage from 'gatsby-background-image'
+// import BackgroundImage from 'gatsby-background-image'
 
 const Footer = () => {
-    const data = useStaticQuery(
-        graphql`
-        query {
-            desktop: file(relativePath: { eq: "deco-cloud@2x.png" }) {
-            childImageSharp {
-                fluid(quality: 90, maxWidth: 1920) {
-                ...GatsbyImageSharpFluid_withWebp
-                }
-            }
-            }
-        }
-        `
-    )
+    // const data = useStaticQuery(
+    //     graphql`
+    //     query {
+    //         desktop: file(relativePath: { eq: "deco-cloud@2x.png" }) {
+    //         childImageSharp {
+    //             fluid(quality: 90, maxWidth: 1920) {
+    //             ...GatsbyImageSharpFluid_withWebp
+    //             }
+    //         }
+    //         }
+    //     }
+    //     `
+    // )
 
-    // Set ImageData.
-    const imageData = data.desktop.childImageSharp.fluid
+    // // Set ImageData.
+    // const imageData = data.desktop.childImageSharp.fluid
 
     return (
         <footer
@@ -30,9 +30,9 @@ const Footer = () => {
             }}
             className={styles.footer}
         >
-            <BackgroundImage
+            {/* <BackgroundImage
                 fluid={imageData}
-            >
+            > */}
                 {/* <div lang="fr">
                     <p>
                         Fondé en 2021, Le 5ème chat vise à aider les chats des rues en Grèce, particulièrement à Syros et à Athènes. Avec l’aide d’une équipe locale et un réseau de solidarité internationale qui organise des programmes de capture, de stérilisation, de vaccination et de remise en liberté (TNVR), des sauvetages et des adoptions.
@@ -65,7 +65,7 @@ const Footer = () => {
                 <p>© Le 5ème Chat / The 5th Cat {new Date().getFullYear()}</p>
                 <p lang="fr">ASSOCIATION À BUT NON LUCRATIF Déclaré en France — n°W883005877</p>
                 <p lang="en">NON-PROFIT CHARITY Registered in France — n°W883005877</p>
-            </BackgroundImage>
+            {/* </BackgroundImage> */}
         </footer>
     )
 }
