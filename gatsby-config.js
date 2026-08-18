@@ -40,7 +40,6 @@ module.exports = {
         },
       }
     },
-    `gatsby-background-image`,
     `gatsby-transformer-remark`,
   ],
 }
