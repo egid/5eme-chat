@@ -32,6 +32,14 @@ module.exports = {
         path: `${__dirname}/src/content`,
       },
     },
+    {
+      resolve: "gatsby-plugin-svgr-loader",
+      options: {
+        rule: {
+          include: /images/
+        },
+      }
+    },
     `gatsby-transformer-remark`,
   ],
 }

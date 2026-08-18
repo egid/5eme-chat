@@ -8,6 +8,7 @@
     "gatsby": "^5.16.0",
     "gatsby-plugin-image": "^3.16.0",
     "gatsby-plugin-sharp": "^5.16.0",
+    "gatsby-plugin-svgr-loader": "^0.1.0",
     "gatsby-source-filesystem": "^5.16.0",
     "gatsby-transformer-remark": "^6.16.0",
     "gatsby-transformer-sharp": "^5.16.0",
