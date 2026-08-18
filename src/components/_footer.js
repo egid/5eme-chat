@@ -20,13 +20,22 @@ const Footer = () => (
             </p>
         </div>
         <StaticImage
-        src="../images/art-cat-side@2x.png"
-        loading="lazy"
-        placeholder="none"
-        width={400}
-        quality={95}
-        formats={["auto", "webp", "png"]}
-        alt=""
+            src="../images/art-cat-side@2x.png"
+            loading="lazy"
+            placeholder="none"
+            width={400}
+            quality={95}
+            formats={["auto", "webp", "png"]}
+            alt=""
+        />
+        <StaticImage
+            src="../images/map-syros.png"
+            loading="lazy"
+            placeholder="none"
+            width={300}
+            quality={25}
+            formats={["auto", "jpg", "webp", "png"]}
+            alt=""
         />
 
         <p>© Le 5ème Chat / The 5th Cat {new Date().getFullYear()}</p>
