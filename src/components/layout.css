@@ -200,9 +200,6 @@ p *:last-child {
 li > p {
   margin-bottom: calc(var(--space-4) / 2);
 }
-p {
-  max-width: 680px;
-}
 code {
   font-size: 0.875rem;
 }
@@ -245,4 +242,15 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: none;
+}
+
+container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1em;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+main {
+  grid-column: 3 / 11;
 }
