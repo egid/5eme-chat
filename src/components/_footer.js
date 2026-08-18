@@ -18,15 +18,9 @@ const Footer = () => (
                 Founded in 2021, The 5th Cat aims to help street cats in Greece, particularly in Syros and Athens. This is accomplished with the help of a local and international solidarity network that organizes trap, neuter, vaccinate and release (TNVR) programs, rescues and adoptions.
             </p>
         </div>
-<<<<<<< HEAD
-        <p>© Le Cinquieme Chat / The Fifth Cat {new Date().getFullYear()}</p>
+        <p>© Le 5ème Chat / The 5th Cat {new Date().getFullYear()}</p>
         <p lang="fr">ASSOCIATION À BUT NON LUCRATIF Déclaré en France — n°W883005877</p>
         <p lang="en">NON-PROFIT CHARITY Registered in France — n°W883005877</p>
-=======
-        <p>© Le 5ème Chat / The 5th Cat {new Date().getFullYear()}</p>
-        <p>ASSOCIATION À BUT NON LUCRATIF Déclaré en France — n°W883005877</p>
-        <p>NON-PROFIT CHARITY Registered in France — n°W883005877</p>
->>>>>>> e197742 (tweak footer, manage images)
     </footer>
 )
 
