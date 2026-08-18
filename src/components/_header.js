@@ -22,17 +22,24 @@ const Header = ({ siteTitle }) => (
       }}
     >
       <StaticImage
-        src="../images/logo.jpg"
+        className="logo"
+        src="../images/logo-en@2x.png"
+        placeholder="none"
         loading="eager"
         width={200}
         quality={95}
         formats={["auto", "webp", "png"]}
         alt=""
-        style={{ 
-          marginBottom: `var(--space-3)`,
-          clear: `both`,
-          display: `block`
-        }}
+      />
+      <StaticImage
+        className="header-cat"
+        src="../images/art-cat-zoom.png"
+        loading="lazy"
+        placeholder="none"
+        width={400}
+        quality={95}
+        formats={["auto", "webp", "png"]}
+        alt=""
       />
       <h1 className="sr-only">Le Cinquième Chat - The Fifth Cat</h1>
     </Link>
