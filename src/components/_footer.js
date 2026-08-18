@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
 		<footer className={styles.footer}>
 			<div className={styles.aboutSection}>
-				<p className={styles.about} lang="en">
+				<p className={styles.aboutText} lang="en">
 					Founded in 2021, <strong>The 5th Cat aims to help street cats in Greece</strong>, particularly in Syros and Athens. This is accomplished with the <strong>help of a local and international solidarity network</strong> that organizes trap, neuter, vaccinate and release (TNVR) programs, <strong>rescues and adoptions</strong>.
 				</p>
 				<div className={styles.mapCat}>
