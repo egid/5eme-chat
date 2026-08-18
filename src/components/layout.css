@@ -248,14 +248,11 @@ pre tt:after {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
   grid-template-areas: "header" "main" "footer";
   grid-gap: 1rem;
-  /* grid-auto-rows: minmax(100px, auto); */
 }
 
 main {
-  /* grid-column: auto; */
   grid-area: main;
   max-width: 40rem;
   margin: 0 auto;
