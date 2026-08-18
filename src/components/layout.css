@@ -257,7 +257,7 @@ pre tt:after {
 main {
   /* grid-column: auto; */
   grid-area: main;
-  max-width: 30rem;
+  max-width: 40rem;
   margin: 0 auto;
 }
 
