@@ -47,8 +47,8 @@ const Header = ({ siteTitle }) => (
     </Link>
 
     <ul className={styles.textCenter}>
-      <li><a href="https://www.facebook.com/5eme.chat" target="_blank" rel="noreferrer"><IconFacebook width="50" /></a></li>
-      <li><a href="https://instagram.com/5th.cat" target="_blank" rel="noreferrer"><IconInstagram width="50" /></a></li>
+      <li><a href="https://www.facebook.com/5eme.chat" target="_blank" rel="noreferrer"><IconFacebook className={styles.iconExt} /></a></li>
+      <li><a href="https://instagram.com/5th.cat" target="_blank" rel="noreferrer"><IconInstagram className={styles.iconExt} /></a></li>
     </ul>
   </header>
 )

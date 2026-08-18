@@ -54,3 +54,8 @@
   max-width: none;
   line-height: var(--line-height-loose);
 }
+
+.iconExt {
+  width: 3rem;
+  display: block;
+}
