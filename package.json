@@ -6,7 +6,6 @@
   "author": "Eric Gideon <eric.gideon@gmail.com>",
   "dependencies": {
     "gatsby": "^5.16.0",
-    "gatsby-background-image": "^1.6.0",
     "gatsby-plugin-image": "^3.16.0",
     "gatsby-plugin-sharp": "^5.16.0",
     "gatsby-plugin-svgr-loader": "^0.1.0",
