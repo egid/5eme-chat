@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
     >
       <StaticImage
         className={styles.logo}
-        src="../images/logo-en@2x.png"
+        src="../images/logo-en.png"
         placeholder="none"
         loading="eager"
         width={200}

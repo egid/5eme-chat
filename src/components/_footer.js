@@ -23,17 +23,17 @@ const Footer = () => {
 						placeholder="none"
 						width={200}
 						quality={25}
-						formats={["auto", "jpg", "webp", "png"]}
+						formats={["auto"]}
 						alt=""
 						/>
 					<StaticImage
 						className={styles.footerCat}
-						src="../images/art-cat-side@2x.png"
+						src="../images/art-cat-side.png"
 						loading="lazy"
 						placeholder="none"
 						width={300}
 						quality={95}
-						formats={["auto", "webp", "png"]}
+						formats={["auto"]}
 						alt=""
 						/>
 					</div>

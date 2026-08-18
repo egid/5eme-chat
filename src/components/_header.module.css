@@ -1,6 +1,7 @@
 .header {
-    grid-column: 1 / 13;
-    grid-row: 1;
+    grid-area: header;
+    /* grid-column: 1 / span 0;
+    grid-row: 1; */
     margin: 0 auto;
     /* padding: `var(--space-4) var(--size-gutter)`, */
     display: flex;
