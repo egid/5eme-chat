@@ -5,31 +5,26 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/_seo"
 import * as styles from "../components/index.module.css"
+import { graphql } from "gatsby"
 
 const links = [
   {
-    text: "Adoptez un chat (français)",
-    url: "https://docs.google.com/forms/d/e/1FAIpQLSfXLLTRlU5Iyet9byAqJs-2lh_Z8fTWTu_RcdCohvO7x0uy6Q/viewform?usp=send_form",
+    text: "Adoptez un chat / Adopt a cat",
+    url: "https://www.secondechance.org/refuge/bas-rhin/le-cinquieme-chat-3467/pensionnaires",
     description:
-      "Formulaire pré-adoption",
-  },
-  {
-    text: "Adopt a cat (english)",
-    url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSf996Yu15jDlm9M2aIkX2edYalGLyd7Rja17xFrJp85Z0ORhA/viewform?usp=send_form&pli=1",
-    description:
-      "Pre-adoption form",
+      "Formulaire pré-adoption / pre-adoption form",
   },
   {
     text: "Support Greek stray cats",
     url: "http://paypal.me/FifthCat",
     description:
-      "Contribute via PayPal",
+      "PayPal",
   },
   {
-    text: "Faire un don pour les chats grecs (CB)",
+    text: "Faire un don pour les chats grecs",
     url: "https://www.helloasso.com/associations/le-cinquieme-chat-the-fifth-cat",
     description:
-      "Faites un don via HelloAsso",
+      "HelloAsso (CB)",
   },
 ]
 
@@ -57,29 +52,42 @@ const links = [
 // const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 const utmParameters = ``
 
-const IndexPage = () => (
-  <Layout>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    {/* {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))} */}
-  </Layout>
-)
+export const query = graphql`
+  query IndexPageQuery {
+    markdownRemark(fileAbsolutePath: { regex: "/src/content/index/index.en.md/" }) {
+      html
+    }
+  }
+`
+
+const IndexPage = ( {data} ) => {
+  const index = data.markdownRemark;
+
+  return (
+    <Layout>
+      <ul className={styles.list}>
+        {links.map(link => (
+          <li key={link.url} className={styles.listItem}>
+            <a
+              className={styles.listItemLink}
+              href={`${link.url}${utmParameters}`}
+            >
+              {link.text} ↗
+            </a>
+            <p className={styles.listItemDescription}>{link.description}</p>
+          </li>
+        ))}
+      </ul>
+      {/* {moreLinks.map((link, i) => (
+        <React.Fragment key={link.url}>
+          <a href={`${link.url}${utmParameters}`}>{link.text}</a>
+          {i !== moreLinks.length - 1 && <> · </>}
+        </React.Fragment>
+      ))} */}
+      {/* <div dangerouslySetInnerHTML={{ __html: index.html }} /> */}
+    </Layout>
+  )
+}
 
 /**
  * Head export to define metadata for the page

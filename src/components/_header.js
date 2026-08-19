@@ -1,45 +1,48 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import * as styles from "../components/index.module.css"
+import * as styles from "../components/_header.module.css"
+import * as stylesGlobal from "../components/index.module.css"
+import IconFacebook from "../images/logo-facebook.svg"
+import IconInstagram from "../images/logo-instagram.svg"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      margin: `0 auto`,
-      padding: `var(--space-4) var(--size-gutter)`,
-      display: `flex`,
-      flexDirection: `column`,
-      alignItems: `center`,
-      justifyContent: `center`,
-    }}
-  >
+  <header className={styles.header}>
     <Link
       to="/"
       style={{
         fontSize: `var(--font-sm)`,
         textDecoration: `none`,
       }}
+      className={styles.headerLink}
     >
       <StaticImage
-        src="../images/logo.jpg"
+        className={styles.logo}
+        src="../images/logo-en.png"
+        placeholder="none"
         loading="eager"
         width={200}
         quality={95}
         formats={["auto", "webp", "png"]}
         alt=""
-        style={{ 
-          marginBottom: `var(--space-3)`,
-          clear: `both`,
-          display: `block`
-        }}
       />
       <h1 className="sr-only">Le Cinquième Chat - The Fifth Cat</h1>
     </Link>
+    <StaticImage
+      className={styles.headerCat}
+      src="../images/art-cat-zoom.png"
+      loading="lazy"
+      placeholder="none"
+      width={200}
+      quality={95}
+      formats={["auto", "webp", "png"]}
+      alt=""
+    />
 
-    <div className={styles.textCenter}>
-      <a href="https://www.facebook.com/5eme.chat" target="_blank" rel="noreferrer">Facebook</a> | <a href="https://instagram.com/5th.cat" target="_blank" rel="noreferrer">Instagram</a>
-    </div>
+    <ul className={styles.socialLinks}>
+      <li><a href="https://www.facebook.com/5eme.chat" target="_blank" rel="noreferrer"><IconFacebook className={stylesGlobal.iconExt} /></a></li>
+      <li><a href="https://instagram.com/5th.cat" target="_blank" rel="noreferrer"><IconInstagram className={stylesGlobal.iconExt} /></a></li>
+    </ul>
   </header>
 )
 
