@@ -9,10 +9,10 @@ import { graphql } from "gatsby"
 
 const links = [
   {
-    text: "Adoptez un chat / Adopt a cat",
+    text: "Adoptez un chat • Adopt a cat",
     url: "https://www.secondechance.org/refuge/bas-rhin/le-cinquieme-chat-3467/pensionnaires",
     description:
-      "Formulaire pré-adoption / pre-adoption form",
+      "Formulaire pré-adoption • pre-adoption form",
   },
   {
     text: "Support Greek stray cats",
@@ -72,7 +72,7 @@ const IndexPage = ( {data} ) => {
               className={styles.listItemLink}
               href={`${link.url}${utmParameters}`}
             >
-              {link.text} ↗
+              {link.text}
             </a>
             <p className={styles.listItemDescription}>{link.description}</p>
           </li>

@@ -32,7 +32,7 @@ const Footer = () => {
 						/>
 					</div>
 			</div>
-			<p className={styles.copyright}>© Le 5ème Chat / The 5th Cat {new Date().getFullYear()}</p>
+			<p className={styles.copyright}>© Le 5ème Chat • The 5th Cat {new Date().getFullYear()}</p>
 			<div className={styles.charityInfo}>
 				<p lang="fr">ASSOCIATION À BUT NON LUCRATIF Déclaré en France — n°W883005877</p>
 				<p lang="en">NON-PROFIT CHARITY Registered in France</p>

@@ -1,20 +1,12 @@
 .list {
-  display: grid;
-  margin: 0;
-  /* https://css-tricks.com/responsive-layouts-fewer-media-queries/ */
-  --w: 280px;
-  --n: 2;
-  gap: var(--size-gap);
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(max(var(--w), 100%/ (var(--n) + 1) + 0.1%), 1fr)
-  );
-  margin-bottom: var(--size-gap);
-  margin-top: var(--size-gap);
-}
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  max-width: fit-content;}
 
 .listItem {
-  list-style-position: outside;
+  list-style-type: none;
   margin: 0 0 0 1rem;
   padding: 0 0 1rem 0;
   border-bottom: 1px solid #f0f0f0;
@@ -37,8 +29,19 @@
 }
 
 .listItemLink {
-  color: var(--color-primary);
+  color: white;
+  background-color: var(--color-secondary);
   font-weight: bold;
+  padding: 1rem;
+  border-radius: 4rem;
+  margin-bottom: 0.25rem;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.listItemLink:hover {
+  color: white;
+  background-color: var(--color-primary);
 }
 
 .listItemDescription {
