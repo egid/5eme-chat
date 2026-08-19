@@ -84,7 +84,7 @@ const IndexPage = ( {data} ) => {
           {i !== moreLinks.length - 1 && <> · </>}
         </React.Fragment>
       ))} */}
-      <div dangerouslySetInnerHTML={{ __html: index.html }} />
+      {/* <div dangerouslySetInnerHTML={{ __html: index.html }} /> */}
     </Layout>
   )
 }
